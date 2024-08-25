@@ -7,12 +7,10 @@
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kim-1210)](https://github.com/anuraghazra/github-readme-stats)
 
-<details>
 <summary>
   <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Eyes.png" alt="Eyes" width="2%" />
   Notion
 </summary>
    https://www.notion.so/24-06-26-571b169c868242e5b13cc274b843e4fa
-</details>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=150&section=footer" />
