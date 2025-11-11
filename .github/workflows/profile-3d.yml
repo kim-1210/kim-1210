@@ -1,0 +1,25 @@
+name: Generate 3D Contribution Graph
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"  # 12시간마다 자동 업데이트
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate GitHub 3D contribution graph
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: kim-1210
+          OUTPUT_PATH: profile-3d-contrib
+          THEME: night-view
+      - name: Push to GitHub
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "Update 3D contribution graph"
+          git push
