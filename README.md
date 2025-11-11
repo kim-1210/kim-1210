@@ -5,8 +5,8 @@
 <div align="center">
 
 ### 👨‍💻 Hi, I'm **Kim Daeyoung**  
-I’m a student majoring in **AI Convergence Robotics @ Inje University**  
-and I love working on **AI + Robotics + Vision** 🧠🤖
+I’m a **master’s student in AI Convergence Robotics** at **Inje University**,  
+with a **bachelor’s degree in Computer Science** 🎓
 
 ---
 
