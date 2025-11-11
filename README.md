@@ -24,7 +24,7 @@
 
 <!-- 3D Graph (AI 감성 버전) -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ashutosh00710/github-readme-3d-contrib/main/profile-night-view.svg" width="820" alt="3D Contribution Graph" />
+  <img src="https://raw.githubusercontent.com/kim-1210/kim-1210/main/profile-3d-contrib/profile-night-view.svg" width="820" />
 </p>
 
 ---
