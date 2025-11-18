@@ -22,16 +22,18 @@
 
 ---
 
+<!-- 활동 그래프: 커밋하면 계속 변하는 영역 -->
 ![3D Grass](./profile-3d-contrib/profile-night-rainbow.svg)
 
 ---
 
-<!-- 활동 그래프: 커밋하면 계속 변하는 영역 -->
+<!-- 활동 그래프: 커밋하면 계속 변하는 영역
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=kim-1210&theme=tokyo-night&hide_border=true" />
 </p>
 
----
+--- 
+-->
 
 <!-- Solved.ac -->
 <p align="center">
