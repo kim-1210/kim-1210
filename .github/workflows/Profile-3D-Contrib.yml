@@ -18,6 +18,8 @@ jobs:
           USERNAME:     ${{ github.repository_owner }}       # 오타 수정!
 
       - name: Commit & Push
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
         run: |
           git config user.name  "kim-1210"
           git config user.email "zxmzxm1324@gmail.com"
