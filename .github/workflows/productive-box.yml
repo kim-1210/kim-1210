@@ -1,43 +1,24 @@
-name: Profile Automation
+name: GitHub-Profile-3D-Contrib
 
-# push, 수동 실행, 그리고 두 가지 스케줄(cron)을 모두 트리거로 걸어둡니다.
 on:
-  push:
-    branches: [main]
-  workflow_dispatch: {}
-  schedule:
-    - cron: '0 18 * * *'
-
-env:
-  TIMEZONE: Asia/Seoul   
+  schedule: # 03:00 JST == 18:00 UTC
+    - cron: "0 18 * * *"
+  workflow_dispatch:
 jobs:
-  update-gist:
+  build:
     runs-on: ubuntu-latest
+    name: generate-github-profile-3d-contrib
     steps:
-      - uses: actions/checkout@v2
-      - name: Update gist
-        uses: maxam2017/productive-box@v1.2.0
+      - uses: actions/checkout@v4
+      - uses: yoshi389111/guthub-profile-3d-contrib@0.7.1
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GIST_ID:  ${{ secrets.GIST_ID }}
-          TIMEZONE: ${{ env.TIMEZONE }}
-
-  generate-3d-grass:
-
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Generate 3D grass
-        uses: yoshi389111/github-profile-3d-contrib@0.6.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}   
-          USERNAME:       ${{ github.actor }}
-
-      - name: Commit & Push 3D grass
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          UESRNAME: ${{ github.repository_owner }}
+      - name: Commit & Push
         run: |
-          git config user.name  "${{ github.actor }}"
-          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          git config user.name kim-1210
+          git config user.email zxmzxm1324@gmail.com
+          git remote set-url origin https://github.com/kim-1210/kim-1210.git
           git add -A .
-          git commit -m "chore: update 3D grass"
-          git push
+          git commit -m "generated"
+          git push https://$GITHUB_TOKEN@github.com/kim-1210/kim-1210.git
